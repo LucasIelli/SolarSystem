@@ -6,8 +6,4 @@ const path = require("path");
 module.exports = merge(commonConfiguration, {
   mode: "production",
   plugins: [new CleanWebpackPlugin()],
-  output: {
-    path: path.resolve(__dirname, "../docs"),
-    filename: "bundle.js",
-  },
 });
